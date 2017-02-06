@@ -1,2 +1,2 @@
-# linuxInfo
-note about linuxInfo
+# 信号
+
