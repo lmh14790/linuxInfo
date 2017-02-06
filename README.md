@@ -31,9 +31,9 @@ shell和终端驱动程序（正常配置）,在键盘敲入终端字符（Ctrl+
 `kill -HUP 512`。`kill`命令的变体`killall`,可以向运行着某一命令的所有进程发信号。当你不知道进程的pid时使用`killall -HUP inetd` (inted)
 是一个命令
 ### 接受和发送信号
-* 接受信号 
+* 接受信号  
 void （*signal(int sig,void(*func)(int))）（之前版本的信号接口）
 int sigaction (int sig,const struct sigaction *act,struct sigaction *oact)
-* 发送信号 
+* 发送信号   
 int kill(pid_t pid,int sig)  
  要想
