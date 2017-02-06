@@ -9,4 +9,14 @@
 |SIGALRM|超时警告|
 |SIGFPE|*浮点运算异常|
 |SIGHUP|连接挂断|
-
+|SIGILL|*非法指令|
+|SIGINT|终端中断|
+|SIGKILL|终止进程（此信号不能被捕获或忽略）|
+|SIGPIPE|向无读进程的管道写数据|
+|SIGQUIT|终端退出|
+|SIGSEGV|*无效内存段访问|
+|SIGTERM|终止|
+|SIGUSR1|用户定义信号1|
+|SIGUSR2|用户定义信号2|
+如果接受到以上信号中的一个而且并没有安排捕获它，进程将会立刻终止
+|SIGCHLD|子进程已经停止或退出|
