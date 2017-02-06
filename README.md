@@ -1,0 +1,2 @@
+# linuxInfo
+note about linuxInfo
