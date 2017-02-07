@@ -32,9 +32,13 @@ shell和终端驱动程序（正常配置）,在键盘敲入终端字符（Ctrl+
 是一个命令
 ### 接受和发送信号
 * 接受信号  
+```c
 void （*signal(int sig,void(*func)(int))）（之前版本的信号接口）  
 int sigaction (int sig,const struct sigaction *act,struct sigaction *oact)
+```
 * 发送信号   
-int kill(pid_t pid,int sig)  
+```c
+int kill(pid_t pid,int sig)
+```
 要想发送一个信号，进程必须拥有相应的权限。这通常意味着两个进程必须拥有相同的用户ID（即你只能发送信号给属于自己的进程，但超级用户可以发送信号给任何
 进程）。
